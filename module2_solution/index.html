@@ -1,125 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Menu</title>
+	<meta charset="utf-8">
+	<title>Our Menu</title>
 <style>
-
-/********** Base styles **********/
-* {
+	* {
   box-sizing: border-box;
-  width:98%;
-  margin-left: auto;
-  margin-right:auto;
+  font-family: "comic sans ms";
 }
-h1 {
-  margin-bottom: 15px;
-  text-align: center;
-  font-family:"arial";
-}
-
-h2{
-  border: 4px solid black;
-  text-align: center;
-  width:33%;	
-  float:right;
-  margin-bottom:5px;
-  margin-top:0px;
-  margin-right:0px;
-}
-.title1
-{
-  background-color: #FF1493;
-}
-.title2
-{
-  background-color: #FF1111;
-  color: #FFFFFF;
-}
-.title3
-{
-  background-color: #FFFF00;
-}
-
-p {
-  border: 4px solid black;
-  background-color: #AAAAAA;
-  width: 100%;
-  height: 150px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-left: auto;
-  color: solid black;
-}
-
-p1 {
-  float:left;
-  clear:right;
-  margin-left: 10px;
-  margin-right: 10px;
-  width:auto;
-  border:1px solid red;
-}
-
-
 /* Simple Responsive Framework. */
 .row {
-  width: 100%;
-  float: right; 
+	display: table;
+	width: 100%;
+}
+
+.name1{
+	position:relative;
+	top:0px;
+	float: right;
+	width: 200px;
+	border-left:1px solid black;
+	border-bottom: 1px solid black;
+	text-align: center;
+	font-size:125%;
+}
+
+p{
+	clear: right;
+	padding:9px;
+}
+
+h1{
+	width:100%;
+	border:1px solid blue;
+	text-align: center;
+	font-size:175%;
+	padding: 2px;
 }
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3 {
-    float: left;
-    border: 4px solid green;
-  }
   .col-lg-1 {
-    width: 33.33%;
+    float: left;
+    width: 31.33%;
+    height:10em;
+    border: 1px solid black;
+    background-color: #DDDDDD;
+    margin: 1%;
+    overflow: hidden;
   }
-  .col-lg-2 {
-    width: 33.33%;
-  }
-  .col-lg-3 {
-    width: 33.33%;
-  }
-
 }
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3,  {
-    float: left;
-    border: 4px solid green;
+  .col-md-1, .col-md-2{
+    float: left;   
+    height:10em;
+    border: 0px solid black;
+    border: 1px solid black;
+    background-color: #DDDDDD;
+    margin: 1%;
+    overflow: hidden;
   }
   .col-md-1 {
-    float: left;
-    width: 49%;
+    width: 48%;
   }
   .col-md-2 {
-    float: right;
-    width: 49%;
+    width: 98%;
   }
-  .col-md-3 {
-    clear: right;
-    width: 100%;
+}
+
+@media (max-width: 767px)
+{
+	.col-sm-1{
+    float: left;
+    height:10em;
+    border: 0px solid black;
+    border: 1px solid black;
+    background-color: #DDDDDD;
+    margin: 1%;
+    overflow: hidden;
   }
 }
 
 </style>
 </head>
-<body>
 <h1>Our Menu</h1>
-
+<body>
 <div class="row">
-  <font face="arial">
-  <div class="col-lg-3 col-md-1"><h2 class="title1">Chicken</h2><p><p1>Item A</p1></p></div>
-  <div class="col-lg-3 col-md-2"><h2 class="title2">Beef</h2><p><p1>Item B</p1></p></div>
-  <div class="col-lg-3 col-md-3"><h2 class="title3">Sushi</h2><p><p1>Item C</p1></p></div>
-</font>
-  </div>
-
-
+  <div class="col-lg-1 col-md-1 col-sm-1"><div class="name1" style="background-color: #FFDDDD">Chicken</div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+  <div class="col-lg-1 col-md-1 col-sm-1"><div class="name1" style="background-color: #FF2222"><font color="white">Beef</font></div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+  <div class="col-lg-1 col-md-2 col-sm-1"><div class="name1" style="background-color: #EEEE99">Sushi</div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+</div>
 </body>
 </html>
