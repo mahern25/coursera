@@ -10,3 +10,9 @@ body{
 #header-nav{
 	background-color: #FFE4B5;
 }
+#nav-list{
+	text-align: center;
+}
+#navbar-toggler{
+	height: 30px;
+}
