@@ -4,11 +4,15 @@ body{
 .logo{
 	color: #444444;
 }
-.navbar-brand{
-	background-color: #FFE4B5;
+#collapsable-nav{
+	border-color: #444444;
+}
+#DropBtn{
+	border-color: #444444;
 }
 #header-nav{
 	background-color: #FFE4B5;
+	border-color: #444444;
 }
 #nav-list{
 	text-align: center;
@@ -18,4 +22,22 @@ body{
 }
 .text-center{
 	color: #FFE4B5;
+}
+.col-xs-12{
+	height: 1000px;
+	background-color:  #FFE4B5;
+	color: #444444;
+	padding: 10px;	
+	border-color: #444444;
+	border: 10px;
+}
+.item1{
+	font-size: 2em;
+	font-weight: bold;
+}
+.container{
+	border: 10px;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
